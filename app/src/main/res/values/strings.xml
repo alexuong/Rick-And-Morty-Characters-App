@@ -24,4 +24,5 @@
     <string name="Location">Location: </string>
     <string name="First">First Episode: </string>
     <string name="Last">Last Episode: </string>
+    <string name="action_share_title">Share the First and Last Appearances</string>
 </resources>

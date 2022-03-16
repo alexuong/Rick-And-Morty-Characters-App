@@ -3,6 +3,8 @@ package com.example.rickandmortycharactercatalog.ui
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
@@ -65,12 +67,28 @@ class CharacterDetailActivity : AppCompatActivity() {
                 last
         }
     }
-    /*
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.activity_character_detail, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.action_share -> {
+                shareCharacterText()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
+
     private fun shareCharacterText() {
         if (character != null) {
+            val first = character!!.episode.first()
+            val last = character!!.episode.last()
 
-
-            val shareText = ()
+            val shareText = "$first $last"
 
             val intent = Intent().apply {
                 action = Intent.ACTION_SEND
@@ -80,5 +98,4 @@ class CharacterDetailActivity : AppCompatActivity() {
             startActivity(Intent.createChooser(intent, null))
         }
     }
-    */
 }
