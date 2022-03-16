@@ -9,4 +9,39 @@
         <item>reply</item>
         <item>reply_all</item>
     </string-array>
+
+    <string-array name="pref_gender_entries">
+        <item>@string/pref_gender_entry_male</item>
+        <item>@string/pref_gender_entry_female</item>
+        <item>@string/pref_gender_entry_unknown</item>
+    </string-array>
+
+    <string-array name="pref_gender_values">
+        <item>@string/pref_gender_val_male</item>
+        <item>@string/pref_gender_val_female</item>
+        <item>@string/pref_gender_val_unknown</item>
+    </string-array>
+
+    <string-array name="pref_state_entries">
+        <item>@string/pref_state_entry_yes</item>
+        <item>@string/pref_state_entry_no</item>
+    </string-array>
+
+    <string-array name="pref_state_values">
+        <item>@string/pref_state_val_yes</item>
+        <item>@string/pref_state_val_no</item>
+    </string-array>
+
+    <string-array name="pref_species_entries">
+        <item>@string/pref_species_entry_human</item>
+        <item>@string/pref_species_entry_alien</item>
+    </string-array>
+
+    <string-array name="pref_species_values">
+        <item>@string/pref_state_val_alive</item>
+        <item>@string/pref_state_val_dead</item>
+        <item>@string/pref_state_val_unknown</item>
+    </string-array>
+
+
 </resources>

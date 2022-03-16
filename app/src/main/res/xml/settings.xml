@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="@string/pref_character_settings">
+
+        <ListPreference
+            android:title="@string/pref_current_state_title"
+            android:key="@string/pref_state_key"
+            android:entries="@array/pref_state_entries"
+            android:entryValues="@array/pref_state_values"
+            android:defaultValue="@string/pref_state_default"
+            android:dialogTitle="@string/pref_current_state_title"
+            app:useSimpleSummaryProvider="true"
+            />
+
+<!--        <MultiSelectListPreference
+            android:title="@string/pref_gender_title"
+            android:key="@string/pref_gender_key"
+            android:entries="@array/pref_gender_entries"
+            android:entryValues="@array/pref_gender_values"
+            android:dialogTitle="@string/pref_gender_title"
+            />
+
+
+        <MultiSelectListPreference
+            android:title="@string/pref_type_species_title"
+            android:key="@string/pref_species_key"
+            android:entries="@array/pref_species_entries"
+            android:entryValues="@array/pref_species_values"
+            android:dialogTitle="@string/pref_type_species_title"
+            />-->
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

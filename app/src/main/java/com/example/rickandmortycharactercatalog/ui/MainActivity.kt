@@ -9,6 +9,7 @@ import android.widget.SearchView
 import android.widget.TextView
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.rickandmortycharactercatalog.R
@@ -65,7 +66,16 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
             }
         }
 
-        val includeOnlyAlive = false //TODO read this value from a share preference boolean currently hardcoded
+        val sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this)
+        val deadOrAlive = sharedPrefs.getString(getString(R.string.pref_state_key),null)
+
+        var includeOnlyAlive = false
+
+        if(deadOrAlive.equals("yes")){
+            includeOnlyAlive = true
+        }
+
+
         viewModel.loadCharacters(includeOnlyAlive)
         searchView.setOnQueryTextListener(this);
     }

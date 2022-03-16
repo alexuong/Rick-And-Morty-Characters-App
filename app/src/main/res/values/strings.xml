@@ -4,6 +4,64 @@
     <string name="action_settings_title">Launch preference screen</string>
     <string name="title_activity_settings">Settings</string>
 
+
+    <string name="pref_character_settings">Character Settings</string>
+
+    <!--Display by gender-->
+    <string name="pref_gender_title">Display characters by gender</string>
+    <string name="pref_gender_key" translatable="false">gender</string>
+
+    <string name="pref_gender_entry_all">All</string>
+    <string name="pref_gender_entry_male">Male</string>
+    <string name="pref_gender_entry_female">Female</string>
+    <string name="pref_gender_entry_unknown">Unknown</string>
+
+    <string name="pref_gender_val_all" translatable="false">all</string>
+    <string name="pref_gender_val_male" translatable="false">male</string>
+    <string name="pref_gender_val_female" translatable="false">female</string>
+    <string name="pref_gender_val_unknown" translatable="false">unknown</string>
+
+    <string name="pref_gender_default">@string/pref_gender_val_all</string>
+
+
+    <!--display dead or alive-->
+    <string name="pref_current_state_title">Display only alive characters?</string>
+    <string name="pref_state_key" translatable="false">deadOrAlive</string>
+
+    <string name="pref_state_entry_all">All</string>
+    <string name="pref_state_entry_alive">Alive</string>
+    <string name="pref_state_entry_dead">Dead</string>
+    <string name="pref_state_entry_unknown">Unknown</string>
+
+    <string name="pref_state_entry_yes">Yes</string>
+    <string name="pref_state_entry_no">No</string>
+
+    <string name="pref_state_val_all">All</string>
+    <string name="pref_state_val_alive">Alive</string>
+    <string name="pref_state_val_dead">Dead</string>
+    <string name="pref_state_val_unknown">Unknown</string>
+
+    <string name="pref_state_val_yes">yes</string>
+    <string name="pref_state_val_no">no</string>
+
+    <string name="pref_state_default">@string/pref_state_val_no</string>
+
+
+    <!--Species-->
+    <string name="pref_type_species_title">Display Characters by species</string>
+    <string name="pref_species_key" translatable="false">species</string>
+
+    <string name="pref_species_entry_all">All</string>
+    <string name="pref_species_entry_human">Human</string>
+    <string name="pref_species_entry_alien">Alien</string>
+
+
+    <string name="pref_species_val_all">All</string>
+    <string name="pref_species_val_human">human</string>
+    <string name="pref_species_val_alien">alien</string>
+
+
+
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
     <string name="sync_header">Sync</string>
