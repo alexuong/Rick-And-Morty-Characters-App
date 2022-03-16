@@ -12,6 +12,9 @@
         <entry key="..\:/Users/jerma/AndroidStudioProjects/CS492_Final/app/src/main/res/layout/character_list_item.xml" value="0.1" />
         <entry key="..\:/Users/jerma/AndroidStudioProjects/CS492_Final/app/src/main/res/layout/settings_activity.xml" value="0.18541666666666667" />
         <entry key="..\:/Users/jerma/AndroidStudioProjects/CS492_Final/app/src/main/res/menu/activity_main.xml" value="0.36666666666666664" />
+        <entry key="app/src/main/res/drawable/ic_action_share.xml" value="0.2585" />
+        <entry key="app/src/main/res/layout/activity_character_detail.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/activity_character_detail.xml" value="0.2989583333333333" />
       </map>
     </option>
   </component>

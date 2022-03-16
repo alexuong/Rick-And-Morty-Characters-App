@@ -8,36 +8,42 @@
 
     <ImageView
         android:id="@+id/iv_image"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="16dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024"
+        app:layout_constraintVertical_bias="0.0"
         tools:src="@drawable/ic_launcher_background" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toTopOf="@id/tv_originTitle"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/tv_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginEnd="10dp"
         android:gravity="center"
         android:textAppearance="?attr/textAppearanceHeadline4"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginStart="170dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="@id/iv_image"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04"
         tools:text="Pickle Rick" />
 
     <TextView
         android:id="@+id/tv_originTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:textAppearance="?attr/textAppearanceHeadline5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,6 +62,15 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_originTitle"
         tools:layout_editor_absoluteX="16dp"
         tools:text="origin" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+
+        android:layout_marginTop="2dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toTopOf="@id/tv_locationTitle"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/tv_locationTitle"
@@ -80,6 +95,16 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_locationTitle"
         tools:layout_editor_absoluteX="16dp"
         tools:text="location" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toTopOf="@id/tv_first"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/tv_first"
@@ -107,6 +132,15 @@
         tools:text="episode" />
 
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toTopOf="@id/tv_last"
+        app:layout_constraintVertical_bias="1.0" />
+
+
     <TextView
         android:id="@+id/tv_last"
         android:layout_width="wrap_content"
@@ -131,6 +165,14 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_last"
         tools:layout_editor_absoluteX="16dp"
         tools:text="episode" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 
