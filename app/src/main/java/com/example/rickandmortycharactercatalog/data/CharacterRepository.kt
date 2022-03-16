@@ -10,10 +10,11 @@ class CharacterRepository(
     private val service: CharacterService,
     private val ioDispatcher: CoroutineDispatcher = Dispatchers.IO
 ) {
-    suspend fun loadCharacters(): Result<Characters> {
+    suspend fun loadCharacters(includeOnlyAlive: Boolean): Result<Characters> {
         return withContext(ioDispatcher) {
             try {
-                Result.success(service.getAllCharacters())
+                val status = if (includeOnlyAlive) "alive" else null
+                Result.success(service.getAllCharacters(status))
             } catch (e: Exception) {
                 Result.failure(e)
             }

@@ -6,11 +6,14 @@ import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.GET
+import retrofit2.http.Query
 
 
 interface CharacterService {
     @GET("character")
-    suspend fun getAllCharacters(): Characters
+    suspend fun getAllCharacters(
+        @Query("status") status: String?
+    ): Characters
 
     companion object {
         private const val BASE_URL = "https://rickandmortyapi.com/api/"

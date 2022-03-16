@@ -22,10 +22,10 @@ class CharacterViewModel : ViewModel() {
     private val _loadingStatus = MutableLiveData(LoadingStatus.SUCCESS)
     val loadingStatus: LiveData<LoadingStatus> = _loadingStatus
 
-    fun loadCharacters() {
+    fun loadCharacters(includeOnlyAlive: Boolean) {
         viewModelScope.launch {
             _loadingStatus.value = LoadingStatus.LOADING
-            val result = repository.loadCharacters()
+            val result = repository.loadCharacters(includeOnlyAlive)
             _characters.value = result.getOrNull()
             _loadingStatus.value = when (result.isSuccess) {
                 true -> LoadingStatus.SUCCESS

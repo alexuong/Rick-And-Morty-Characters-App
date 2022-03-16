@@ -65,7 +65,8 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
             }
         }
 
-        viewModel.loadCharacters()
+        val includeOnlyAlive = false //TODO read this value from a share preference boolean currently hardcoded
+        viewModel.loadCharacters(includeOnlyAlive)
         searchView.setOnQueryTextListener(this);
     }
 
