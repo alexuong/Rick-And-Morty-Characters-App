@@ -60,7 +60,12 @@
     <string name="pref_species_val_human">human</string>
     <string name="pref_species_val_alien">alien</string>
 
-
+    <!-- Detail Activity Strings -->
+    <string name="Origin">Origin: </string>
+    <string name="Location">Location: </string>
+    <string name="First">First Episode: </string>
+    <string name="Last">Last Episode: </string>
+    <string name="action_share_title">Share the First and Last Appearances</string>
 
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
