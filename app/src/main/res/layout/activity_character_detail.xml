@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#97CE4C"
     tools:context=".ui.CharacterDetailActivity">
 
     <ImageView
@@ -17,12 +18,12 @@
         tools:src="@drawable/ic_launcher_background" />
 
     <View
+        android:id="@+id/originLine"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-
         android:layout_marginTop="2dp"
         android:layout_marginBottom="2dp"
-        android:background="@android:color/darker_gray"
+        android:background="#44281D"
         app:layout_constraintTop_toTopOf="@id/tv_originTitle"
         app:layout_constraintVertical_bias="1.0" />
 
@@ -32,6 +33,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textAppearance="?attr/textAppearanceHeadline4"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="170dp"
         android:layout_marginEnd="10dp"
@@ -68,7 +70,7 @@
         android:layout_height="2dp"
 
         android:layout_marginTop="2dp"
-        android:background="@android:color/darker_gray"
+        android:background="#44281D"
         app:layout_constraintTop_toTopOf="@id/tv_locationTitle"
         app:layout_constraintVertical_bias="1.0" />
 
@@ -102,7 +104,7 @@
 
         android:layout_marginTop="2dp"
         android:layout_marginBottom="2dp"
-        android:background="@android:color/darker_gray"
+        android:background="#44281D"
         app:layout_constraintTop_toTopOf="@id/tv_first"
         app:layout_constraintVertical_bias="1.0" />
 
@@ -136,7 +138,7 @@
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_marginTop="2dp"
-        android:background="@android:color/darker_gray"
+        android:background="#44281D"
         app:layout_constraintTop_toTopOf="@id/tv_last"
         app:layout_constraintVertical_bias="1.0" />
 
@@ -170,7 +172,7 @@
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_marginTop="2dp"
-        android:background="@android:color/darker_gray"
+        android:background="#44281D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
