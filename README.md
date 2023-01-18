@@ -12,7 +12,7 @@ Scrollable, search functionality, expanded detail pane, settings pane, and share
 5) Run project on Android Emulator
 
 
-![Homepage](Images/homepage.png)
+![Homepage](Images/homepage.png) [ExpandedDetailPane](Images/ExpandedDetailPane.png) 
 
 
 
