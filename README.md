@@ -12,7 +12,7 @@ Scrollable, search functionality, expanded detail pane, settings pane, and share
 5) Run project on Android Emulator
 
 
-
+![alt text](https://gyazo.com/757602e61713c2035398d86709416f71)
 
 
 
